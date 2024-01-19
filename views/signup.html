@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash N Treasure | Worker Registration</title>
+    <link rel="stylesheet" href="/static/signup.css">
+</head>
+<body>
+    <div class="images">
+        <img src="/static/images/trash and treasure.jpg" alt="" srcset="">
+    </div>
+    <div class="contactform">
+        <h1>Service worker Registration</h1>
+        <form action="/user/register" method="post">
+            <div class="mb-3">
+                <label for="workerName" class="form-label">Name</label>
+                <input type="name" class="form-control" name="name" id="workerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="workerEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email" id="workerEmail" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="workerPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="workerPassword" required>
+            </div>
+            <div class="mb-3">
+                <label for="workerConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" name="confirmPassword" id="workerConfirmPassword" required>
+            </div>
+            <div class="submit"><button type="submit" class="btn btn-primary">Register</button></div>
+            <p style="font-size: 12px">Already have an Account? <a href="/user/login">login</a></p>
+          </form>
+    </div>
+</body>
+</html>

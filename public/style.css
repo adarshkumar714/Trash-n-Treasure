@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 1px solid gray;
+}
+
+.header .mainHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHome {
+    width: 100%;
+    display: flex;
+    height: 88vh;
+}
+
+.mainPostLocation {
+    width: 100%;
+    display: flex;
+    height: 88vh;
+}
+
+.map iframe {
+    width: 1121px;
+    height: 647px;
+    border: 0;
+
+}
+
+.left {
+    width: 73%;
+    background-color: aliceblue;
+}
+
+.header .heading {
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 22px; */
+    padding: 0 6px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #30792e;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.header .logo {
+    border-radius: 14px;
+    height: 50px;
+    /* margin: 15px 5px 5px 5px; */
+    width: 50px;
+    /* background-color: aquamarine; */
+}
+
+.navbar {
+    cursor: pointer;
+    display: flex;
+    /* background-color: aqua; */
+    width: 40vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li a:hover {
+    color: #067902;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #82af25;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+    transition: .5s;
+}
+
+/* .auth {
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.auth a{
+    color: #808080c4;
+}
+
+.auth a:hover {
+    color: rgba(0, 102, 255, 0.753);
+}
+
+.auth .text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+} */
+
+.auth {
+    width: 24vw;
+    padding-left: 7vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #30792e;
+}
+
+.auth *{
+    color: #30792e;
+}
+
+.auth i{
+    font-size: 24px;
+}
+
+.auth a:hover {
+    color: grey;
+}
+.auth i:hover {
+    color: grey;
+}
+
+.auth .text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right {
+    width: 27%;
+    /* border-radius: 10px; */
+    padding-top: 20px;
+    position: sticky;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+    border-left: 1px solid gray;
+    background: white;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10%; */
+    gap: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.taskHeading {
+    margin-left: 10%;
+}
+
+.task .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.head .taskbar {
+    display: flex;
+    gap: 10px;
+}
+
+.task h3 {
+    color: black;
+}
+
+#openTask {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.task .details {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-x: auto;
+    height: 76vh;
+}
+
+.details>div {
+    border-bottom: 1px solid #00000054;
+    padding: 10px 0;
+}
+
+.detail>div {
+    margin-left: 10%;
+}
+
+.detail{
+    transition: .5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+b{
+    margin-right: 6px;
+}
+
+.detail:hover{
+    background: #6868682b;
+}
+
+.task .btn {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.button {
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 14px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.contactform {
+    margin-top: 10vh;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(255, 251, 251);
+}
+
+.contactform h4 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 24vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 13px;
+    color: rgb(19, 19, 21);
+    margin: 0 5px;
+}
+
+.post .btn {
+    width: 75px;
+    padding: 6px 14px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: none;
+}
+
+/* .btn:hover {
+    background-color: rgb(219, 216, 216);
+    color: dodgerblue;
+
+} */
+
+.mainAbout {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+}
+
+.about_image img {
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    /* border-radius: 10px; */
+    background-color: rgba(197, 192, 192, 0.432);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    width: 100%;
+}
+
+.about h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 20px;
+    color: rgb(66, 59, 59);
+}
+
+.border {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    border: 1px solid #a49c95;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.about p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 75%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(66, 59, 59);
+    line-height: 25px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash N Treasure | Worker Login</title>
+    <link rel="stylesheet" href="/static/user_login_page.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="mainHead">
+            <div class="logo">
+                <div class="img_logo"><img style="height: 46px;" src="/static/images/logo2.png" alt=""></div>
+            </div>
+            <div class="heading">
+                <h1>Trash N Treasure</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/about">About</li></a>
+                    <li><a href="/services">Services</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="auth">
+            <a class="text" href="/user/login">Login</a>
+            <a class="text" href="">/</a>
+            <a class="text" href="/user/Register">Register</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="wrapper">
+            <div class="form-box register">
+                <h2>Login</h2>
+                <form action="/user/login" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="/user/register" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

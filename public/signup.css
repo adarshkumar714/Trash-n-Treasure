@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.images{
+    width: 50%;
+    height: 100vh;
+}
+.images img{
+    width: 100%;
+    height: 100vh;
+}
+.btn {
+    width: 75px;
+    padding: 6px 14px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(219, 216, 216);
+    color: dodgerblue;
+
+}
+.contactform {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(255, 251, 251);
+    
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 13px;
+    color: rgb(19, 19, 21);
+    margin: 0 5px;
+}

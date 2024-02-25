@@ -3,7 +3,7 @@ const taskModel = require('../models/task.model')
 
 module.exports.getPublicHomePage = function getPublicHomePage(req, res){
     console.log('get public home page')
-    return res.sendFile(__dirname+'/views/public_home_page.html')
+    return res.sendFile(dirname+'/views/public_home_page.html')
 }
 
 module.exports.post_dump_location = async function post_dump_location(req, res){

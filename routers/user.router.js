@@ -19,7 +19,8 @@ userRouter.route('/login')
 userRouter.use(protectRoute)
 userRouter.route('/home')
 .get((req, res)=>{
-    res.sendFile('/home/pio/Desktop/coding/github/mini-project-of-college/views/user_home_page.html')
+    console.log('error')
+    res.sendFile(__dirname+'/views/user_home_page.html')
 })
 
 userRouter.route('/fetch-tasks')
